@@ -421,11 +421,11 @@ nav a:hover {
   background: #2e2100;
 }
 
-.feedback .info {
+.feedback-item{
   display: flex;
 }
 
-.feedback-item .feedback-left .avatar {
+.feedback-item .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -448,21 +448,21 @@ nav a:hover {
   color: #bfbcb2;
 }
 
-.feedback-item .feedback-left .dots {
+.feedback-item .dots {
   gap: 6px;
   margin-top: 28px;
   display: flex;
-  cursor: pointer;
 }
 
-.feedback-item .feedback-left .dot {
+.feedback-item .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #634700;
+  cursor: pointer;
 }
 
-.feedback-item .feedback-left .active {
+.feedback-item .dot.active {
   cursor: default;
   background-color: var(--primary-color);
 }
@@ -472,9 +472,9 @@ nav a:hover {
   margin-left: auto;
 }
 
-.feedback-item .feedback-right blockquote {
+.feedback-item blockquote {
   color: #FFFFFF;
-  font-size: 2.6rem;
+  font-size: 2.6rem;  
   font-style: italic;
   line-height: 1.54;
 }
