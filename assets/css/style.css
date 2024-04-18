@@ -56,18 +56,18 @@ a {
   opacity: 0.9;
 }
 
-.line-clamp{
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.line-clamp.line-2{
+.line-clamp.line-2 {
   --line-clamp: 2;
 }
 
-.break-all{
+.break-all {
   word-break: break-all;
 }
 /* ========================phần header===================== */
@@ -356,12 +356,11 @@ nav a:hover {
   background: #fff;
 }
 
-.popular .course-item:hover{
+.popular .course-item:hover {
   border-radius: 12px;
   border: 1px solid transparent;
   background: #fff;
-  box-shadow: 0px 18px 36px 0px #0000000D;
-
+  box-shadow: 0px 18px 36px 0px #0000000d;
 }
 
 .popular .course-item .info {
@@ -376,7 +375,7 @@ nav a:hover {
   justify-content: space-between;
 }
 
-.popular .course-item .title a{
+.popular .course-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -408,10 +407,84 @@ nav a:hover {
   line-height: 1.66;
 }
 
-.popular .course-item .btn-book{
+.popular .course-item .btn-book {
   border: none;
 }
 
-.popular .course-item .btn-book:hover{
+.popular .course-item .btn-book:hover {
   background: var(--primary-color);
+}
+/* =========================feedback========================== */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #2e2100;
+}
+
+.feedback .info {
+  display: flex;
+}
+
+.feedback-item .feedback-left .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .feedback-left .member-name {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  color: #f7f7f7;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.feedback-item .feedback-left .desc {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.feedback-item .feedback-left .dots {
+  gap: 6px;
+  margin-top: 28px;
+  display: flex;
+  cursor: pointer;
+}
+
+.feedback-item .feedback-left .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+
+.feedback-item .feedback-left .active {
+  cursor: default;
+  background-color: var(--primary-color);
+}
+
+.feedback-item .feedback-right {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item .feedback-right blockquote {
+  color: #FFFFFF;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+}
+
+.feedback-item .feedback-right{
+  position: relative;
+}
+
+.feedback-item .feedback-right .open-quotes{
+  position: absolute;
+  left: -30px;
+  top: -28px;
 }
